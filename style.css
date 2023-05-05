@@ -91,11 +91,11 @@ header {
     transition: 0.5s;
   }
   /*U P P E R*/
-#create-and-share {
+#create-and-share, #beautiful-stories, #designed-for-everyone{
     width: 100%;
   }
   #create-and-share-tab,
-  #create-and-share-desk
+  #create-and-share-desk, #beautiful-stories-tab, #beautiful-stories-desk, #designed-for-everyone-tab, #designed-for-everyone-desk
   {
     display: none;
   }
@@ -113,14 +113,14 @@ header {
     top: 0;
     margin-top: -3px;
   }
-  .create {
+  .create, .beautiful-stories, .designedforeveryone {
     position: relative;
     padding: 0 29px;
   }
-  .topper {
+  .topper, .beautiful, .designedforeveryone {
     background-color: #000000;
   }
-  .create h1 {
+  .create h1, .beautiful-stories h1, .designedforeveryone h1 {
     font-size: 32px;
     line-height: 40px;
     letter-spacing: 3.33333px;
@@ -128,7 +128,7 @@ header {
     color: #ffffff;
     padding-top: 72px;
   }
-  .create p {
+  .create p, .beautiful-stories p, .designedforeveryone p{
     font-size: 15px;
     line-height: 25px;
     color: #ffffff;
@@ -136,4 +136,110 @@ header {
     opacity: 0.6;
     margin-top: 16px;
     padding-bottom: 72px;
+  }
+  .read {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 24px;
+    padding-bottom: 48px;
+  }
+  .read:hover {
+    text-decoration: underline;
+  }
+  .arrow {
+    filter: invert(100%) sepia(91%) saturate(38%) hue-rotate(254deg)
+      brightness(110%) contrast(110%);
+    margin-left: 16px;
+  }
+  .one {
+    background-image: url(./assets/stories/mobile/mountains.jpg);
+  }
+  .two {
+    background-image: url(./assets/stories/desktop/cityscapes.jpg);
+  }
+  .three {
+    background-image: url(./assets/stories/mobile/18-days-voyage.jpg);
+  }
+  .four {
+    background-image: url(./assets/stories/mobile/architecturals.jpg);
+  }
+  hr {
+    background: #ffffff;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+    width: 291px;
+  }
+  .list {
+    position: relative;
+    height: 500px;
+    transition: transform 0.5s ease;
+    cursor: pointer;
+    z-index: 1;
+  }
+  .list:hover::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 6px;
+    background: linear-gradient(
+      26.57deg,
+      #ffc593 0%,
+      #bc7198 43.29%,
+      #5a77ff 83.33%
+    );
+  }
+  .list:hover {
+    transform: translate(0, -24px);
+  }
+  .story:hover {
+    text-decoration: underline;
+  }
+  .cover {
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .images {
+    width: 100%;
+    height: auto;
+  }
+  .one {
+    background-image: url(./assets/stories/mobile/mountains.jpg);
+  }
+  .imagetext {
+    position: absolute;
+    bottom: 40px;
+    padding-left: 41px;
+  }
+  .date,
+  .author {
+    font-size: 0.8rem;
+    line-height: 17px;
+    margin-top: 4px;
+  }
+  .head {
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: 4px;
+  }
+  .link p {
+    font-size: 0.75rem;
+    line-height: 16px;
+    letter-spacing: 2px;
+  }
+  .link {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  .link p {
+    font-weight: 700;
+  }
+  #arrow {
+    margin-left: 152px;
+    filter: invert(100%) sepia(91%) saturate(38%) hue-rotate(254deg)
+      brightness(110%) contrast(110%);
   }
