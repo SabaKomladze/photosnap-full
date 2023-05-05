@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "DM Sans";
+  font-style: normal;
+}
+button {
+  border: none;
+  font-weight: 700;
+}
+a {
+  text-decoration: none;
+}
+p {
+  font-weight: 400;
+  color: #ffffff;
+}
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  color: #ffffff;
+}
+/*H E A D E R */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 28px 24px;
+  }
+  #menu,
+  #logo {
+    cursor: pointer;
+  }
+  #close {
+    display: none;
+    cursor: pointer;
+  }
+  .nav {
+    position: absolute;
+    width: 100%;
+    background-color: #ffffff;
+    text-align: center;
+    padding-bottom: 32px;
+    padding-top: 32px;
+    left: 0;
+    top: 72px;
+    display: none;
+  }
+  .nav p {
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  .nav p:hover {
+    mix-blend-mode: normal;
+    opacity: 0.3;
+  }
+  .btn:hover {
+    background-color: #dfdfdf;
+    color: #000000;
+  }
+  .btn {
+    background-color: #000000;
+    width: 310px;
+    color: #ffffff;
+    height: 48px;
+    cursor: pointer;
+    border: none;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 2.5px;
+    color: #ffffff;
+    transition: 0.5s;
+  }
+  .nav hr {
+    width: 82.66%;
+    margin: 20px auto;
+  }
+  .nav p {
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 2.5px;
+  
+    color: #000000;
+    transition: 0.5s;
+  }
+  /*U P P E R*/
+#create-and-share {
+    width: 100%;
+  }
+  #create-and-share-tab,
+  #create-and-share-desk
+  {
+    display: none;
+  }
+  .pattern {
+    width: 128px;
+    height: 6px;
+    background: linear-gradient(
+      26.57deg,
+      #ffc593 0%,
+      #bc7198 43.29%,
+      #5a77ff 83.33%
+    );
+    left: 7.73%;
+    position: absolute;
+    top: 0;
+    margin-top: -3px;
+  }
+  .create {
+    position: relative;
+    padding: 0 29px;
+  }
+  .topper {
+    background-color: #000000;
+  }
+  .create h1 {
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 3.33333px;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding-top: 72px;
+  }
+  .create p {
+    font-size: 15px;
+    line-height: 25px;
+    color: #ffffff;
+    mix-blend-mode: normal;
+    opacity: 0.6;
+    margin-top: 16px;
+    padding-bottom: 72px;
+  }

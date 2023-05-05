@@ -1,0 +1,566 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "DM Sans";
+  font-style: normal;
+}
+p {
+  font-weight: 400;
+  color: #ffffff;
+}
+a {
+  text-decoration: none;
+  z-index: 2;
+}
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  color: #ffffff;
+}
+hr {
+  background-color: #ffffff;
+}
+#moon-tab {
+  display: none;
+}
+/* H E A D E R */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 28px 24px;
+}
+#menu,
+#logo {
+  cursor: pointer;
+}
+#close {
+  display: none;
+  cursor: pointer;
+}
+.nav {
+  position: absolute;
+  width: 100%;
+  background-color: #ffffff;
+  text-align: center;
+  padding-bottom: 32px;
+  padding-top: 32px;
+  left: 0;
+  top: 72px;
+  display: none;
+}
+.nav p {
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.nav p:hover {
+  mix-blend-mode: normal;
+  opacity: 0.3;
+}
+.btn:hover {
+  background-color: #dfdfdf;
+  color: #000000;
+}
+.btn {
+  background-color: #000000;
+  width: 310px;
+  color: #ffffff;
+  height: 48px;
+  cursor: pointer;
+  border: none;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 2.5px;
+  color: #ffffff;
+  transition: 0.5s;
+}
+.nav hr {
+  width: 82.66%;
+  margin: 20px auto;
+}
+.nav p {
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #000000;
+}
+/*  H A Z Y MOON */
+
+#moon {
+  width: 100%;
+  height: auto;
+}
+.black {
+  background-color: #000000;
+  padding: 0 24px;
+  margin-top: -3px;
+}
+.featured {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 2px;
+  padding-top: 48px;
+}
+.black h1 {
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 3.33333px;
+  padding-top: 18px;
+}
+.dissected {
+  mix-blend-mode: normal;
+  opacity: 0.6;
+  font-size: 15px;
+  line-height: 25px;
+  padding-top: 24px;
+}
+.march {
+  mix-blend-mode: normal;
+  padding-top: 16px;
+  font-size: 13px;
+  line-height: 17px;
+}
+span {
+  opacity: 0.75;
+}
+.read {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 24px;
+  padding-bottom: 48px;
+}
+.read:hover {
+  text-decoration: underline;
+}
+#arrow {
+  filter: invert(100%) sepia(91%) saturate(38%) hue-rotate(254deg)
+    brightness(110%) contrast(110%);
+  margin-left: 16px;
+}
+
+.images {
+  width: 100%;
+  height: auto;
+}
+.one {
+  background-image: url(./assets/stories/mobile/mountains.jpg);
+}
+.imagetext {
+  position: absolute;
+  bottom: 40px;
+  padding-left: 41px;
+}
+.date,
+.author {
+  font-size: 0.8rem;
+  line-height: 17px;
+  margin-top: 4px;
+}
+.head {
+  font-size: 18px;
+  line-height: 25px;
+  margin-top: 4px;
+}
+.link p {
+  font-size: 0.75rem;
+  line-height: 16px;
+  letter-spacing: 2px;
+}
+.link {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.link p {
+  font-weight: 700;
+}
+#arrow {
+  margin-left: 152px;
+}
+hr {
+  background: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.25;
+  width: 291px;
+}
+.list {
+  position: relative;
+  height: 500px;
+  transition: transform 0.5s ease;
+  cursor: pointer;
+  z-index: 1;
+}
+.list:hover::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background: linear-gradient(
+    26.57deg,
+    #ffc593 0%,
+    #bc7198 43.29%,
+    #5a77ff 83.33%
+  );
+}
+.list:hover {
+  transform: translate(0, -24px);
+}
+.story:hover {
+  text-decoration: underline;
+}
+.cover {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.two {
+  background-image: url(./assets/stories/desktop/cityscapes.jpg);
+}
+.three {
+  background-image: url(./assets/stories/mobile/18-days-voyage.jpg);
+}
+.four {
+  background-image: url(./assets/stories/mobile/architecturals.jpg);
+}
+.five {
+  background-image: url(./assets/stories/mobile/world-tour.jpg);
+}
+.six {
+  background-image: url(./assets/stories/mobile/unforeseen-corners.jpg);
+}
+.seven {
+  background-image: url(./assets/stories/mobile/king-on-africa.jpg);
+}
+.eight {
+  background-image: url(./assets/stories/mobile/trip-to-nowhere.jpg);
+}
+.nine {
+  background-image: url(./assets/stories/mobile/rage-of-the-sea.jpg);
+}
+.ten {
+  background-image: url(./assets/stories/mobile/running-free.jpg);
+  position: relative;
+  z-index: 1;
+}
+.ten::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  z-index: -1;
+  background: #000000;
+}
+.ten:hover::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  order: -1;
+  background: #000000;
+}
+
+.eleven {
+  background-image: url(./assets/stories/mobile/behind-the-waves.jpg);
+}
+.twelwe {
+  background-image: url(./assets/stories/mobile/calm-waters.jpg);
+}
+.thirteen {
+  background-image: url(./assets/stories/mobile/milky-way.jpg);
+}
+.fourteen {
+  background-image: url(./assets/stories/mobile/dark-forest.jpg);
+}
+.fifteen {
+  background-image: url(./assets/stories/mobile/somwarpet.jpg);
+}
+.sixteen {
+  background-image: url(./assets/stories/mobile/land-of-dreams.jpg);
+}
+footer {
+  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.upper,
+.downer {
+  text-align: center;
+}
+#footer-logo {
+  margin-top: 56px;
+}
+.social {
+  margin-top: 32px;
+}
+.media {
+  margin-right: 13.33px;
+  cursor: pointer;
+}
+.footer-nav {
+  margin-top: 49px;
+}
+.footer-nav p {
+  margin-bottom: 19px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.footer-nav p:hover {
+  mix-blend-mode: normal;
+  opacity: 0.3;
+}
+.get {
+  display: flex;
+  justify-content: center;
+  margin-top: 119px;
+  transition: 0.5s;
+}
+.get:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #ffffff;
+}
+.copyright {
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  padding: 34px 0 56px;
+}
+#arrow-footer {
+  filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(48deg)
+    brightness(110%) contrast(114%);
+  margin-left: 22px;
+}
+.twitter {
+  fill: #fff;
+}
+.pin {
+  fill: #fff;
+}
+.pin:hover {
+  fill: url(#pin);
+  cursor: pointer;
+}
+.insta {
+  fill: #fff;
+}
+.fb {
+  fill: #fff;
+}
+.yt {
+  fill: #fff;
+}
+.yt:hover {
+  fill: url(#yt);
+  cursor: pointer;
+}
+.fb:hover {
+  fill: url(#fb);
+  cursor: pointer;
+}
+.insta:hover {
+  fill: url(#insta);
+  cursor: pointer;
+}
+.twitter:hover {
+  fill: url(#twitter);
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  #menu {
+    display: none;
+  }
+  .gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .upper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 40px;
+  }
+  .footer-nav {
+    order: 2;
+    display: flex;
+    transition: 0.5s;
+  }
+  .footer-nav p {
+    margin-right: 26px;
+  }
+  .footer-nav {
+    margin-top: 32px;
+  }
+  .social {
+    order: 3;
+    margin-top: 72px;
+    padding-bottom: 64px;
+  }
+  .get {
+    margin-top: 0;
+    justify-content: flex-end;
+  }
+  .downer {
+    margin-top: 55px;
+    padding-right: 40px;
+  }
+  .copyright {
+    margin-top: 110px;
+  }
+  .hazy {
+    position: relative;
+  }
+  .black {
+    background-color: transparent;
+    position: absolute;
+    z-index: 2;
+    bottom: 122px;
+    width: 50.39%;
+  }
+  #arrow {
+    margin-left: 16px;
+  }
+  .gallery {
+    margin-top: -3px;
+  }
+
+  #moon {
+    display: none;
+  }
+  #moon-tab {
+    display: block;
+    width: 100%;
+    height: 650px;
+  }
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    gap: 2rem;
+    padding-right: 40px;
+    height: 72px;
+    position: absolute;
+    top: 0;
+  }
+  .nav p {
+    margin-bottom: 0;
+  }
+  .nav hr {
+    display: none;
+  }
+  .btn {
+    width: 158px;
+    position: absolute;
+    right: 40px;
+  }
+  #logo {
+    z-index: 2;
+    margin-top: -15px;
+  }
+}
+@media (min-width: 1440px) {
+  .btn {
+    right: 165px;
+  }
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .one {
+    background-image: url(./assets/stories/desktop/mountains.jpg);
+  }
+  .two {
+    background-image: url(./assets/stories/desktop/cityscapes.jpg);
+  }
+  .three {
+    background-image: url(./assets/stories/desktop/18-days-voyage.jpg);
+  }
+  .four {
+    background-image: url(./assets/stories/desktop/architecturals.jpg);
+  }
+  .five {
+    background-image: url(./assets/stories/desktop/world-tour.jpg);
+  }
+  .six {
+    background-image: url(./assets/stories/desktop/unforeseen-corners.jpg);
+  }
+  .seven {
+    background-image: url(./assets/stories/desktop/king-on-africa.jpg);
+  }
+  .eight {
+    background-image: url(./assets/stories/desktop/trip-to-nowhere.jpg);
+  }
+  .nine {
+    background-image: url(./assets/stories/desktop/rage-of-the-sea.jpg);
+  }
+  .ten {
+    background-image: url(./assets/stories/desktop/running-free.jpg);
+  }
+  .eleven {
+    background-image: url(./assets/stories/desktop/behind-the-waves.jpg);
+  }
+  .twelwe {
+    background-image: url(./assets/stories/desktop/calm-waters.jpg);
+  }
+  .thirteen {
+    background-image: url(./assets/stories/desktop/milky-way.jpg);
+  }
+  .fourteen {
+    background-image: url(./assets/stories/desktop/dark-forest.jpg);
+  }
+  .fifteen {
+    background-image: url(./assets/stories/desktop/somwarpet.jpg);
+  }
+  .sixteen {
+    background-image: url(./assets/stories/desktop/land-of-dreams.jpg);
+  }
+  .upper,
+  .downer {
+    padding: 64px 170px;
+    position: relative;
+    margin-top: 0;
+  }
+  .black {
+    width: 26.85%;
+    margin-left: 112px;
+  }
+  header {
+    padding: 0 165px;
+  }
+  .footer-nav {
+    position: absolute;
+    left: 430px;
+    flex-direction: column;
+    top: 35px;
+  }
+  footer {
+    align-items: stretch;
+  }
+  #footer-logo {
+    margin-top: 0;
+  }
+  .social {
+    margin-top: 85px;
+    padding-bottom: 0;
+  }
+  .copyright {
+    margin-top: 86px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
