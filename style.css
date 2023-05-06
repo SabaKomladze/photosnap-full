@@ -23,7 +23,7 @@ h1,
 h2,
 h3 {
   font-weight: 700;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 /*H E A D E R */
 header {
@@ -117,16 +117,22 @@ header {
     position: relative;
     padding: 0 29px;
   }
-  .topper, .beautiful, .designedforeveryone {
+  .topper, .beautiful, .designedforeveryone, .second {
     background-color: #000000;
   }
-  .create h1, .beautiful-stories h1, .designedforeveryone h1 {
+.beautiful-stories, .designedforeveryone{
+  background-color: #FFFFFF;
+}
+  .create h1,.beautiful-stories h1, .designedforeveryone h1 {
     font-size: 32px;
     line-height: 40px;
     letter-spacing: 3.33333px;
     text-transform: uppercase;
     color: #ffffff;
     padding-top: 72px;
+  }
+  .beautiful-stories h1, .designedforeveryone h1{
+    color:#000000;
   }
   .create p, .beautiful-stories p, .designedforeveryone p{
     font-size: 15px;
@@ -137,20 +143,38 @@ header {
     margin-top: 16px;
     padding-bottom: 72px;
   }
+  .beautiful-stories p, .designedforeveryone p{
+    color:#000000;
+  }
   .read {
     display: flex;
     align-items: center;
     cursor: pointer;
     margin-top: 24px;
     padding-bottom: 48px;
+    width: 205px;
+    color: #FFFFFF;
   }
+  .stories{
+    color: #000;
+  }
+  .firststory{
+    color: #FFFFFF;
+  }
+  .firststory:hover{
+    text-decoration: underline;
+  }
+  
   .read:hover {
     text-decoration: underline;
   }
   .arrow {
-    filter: invert(100%) sepia(91%) saturate(38%) hue-rotate(254deg)
-      brightness(110%) contrast(110%);
+    filter: invert(0%) sepia(53%) saturate(2417%) hue-rotate(172deg) brightness(87%) contrast(104%);
     margin-left: 16px;
+  }
+  .firstarrow{
+    margin-left: 16px;
+    filter: invert(100%) sepia(91%) saturate(38%) hue-rotate(254deg)
   }
   .one {
     background-image: url(./assets/stories/mobile/mountains.jpg);
@@ -359,4 +383,96 @@ header {
   .twitter:hover {
     fill: url(#twitter);
     cursor: pointer;
+  }
+  @media (min-width:768px) {
+    .topper {
+      display: flex;
+      height: 490px;
+    }
+    #create-and-share-tab, #designed-for-everyone-tab {
+      display: block;
+      order: 2;
+      width: 35.54%;
+    }
+    #create-and-share, #beautiful-stories, #designed-for-everyone {
+      display: none;
+    }
+    .designedforeveryone, .create, .beautiful-stories {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      padding-left: 54px;
+    }
+    #beautiful-stories-tab{
+      display: block;
+      order: 1;
+      width:35.54% ;
+    }
+    .second{
+      display: flex;
+    }
+    .beautiful{
+      display: flex;
+    }
+    .beautiful-stories{
+      order: 2;
+    }
+    .gallery{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    .responsive p{
+      width: 15.8rem;
+    }
+    .advantages{
+      margin-bottom:120px ;
+    }
+    footer {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .upper {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding-left: 40px;
+    }
+    .footer-nav {
+      order: 2;
+      display: flex;
+    }
+    .footer-nav p {
+      margin-right: 26px;
+    }
+    .footer-nav {
+      margin-top: 32px;
+    }
+    .social {
+      order: 3;
+      margin-top: 72px;
+      padding-bottom: 64px;
+    }
+    .get {
+      margin-top: 0;
+      justify-content: flex-end;
+    }
+    .downer {
+      margin-top: 55px;
+      padding-right: 40px;
+    }
+    .copyright {
+      margin-top: 110px;
+    }
+    .one {
+      background-image: url(./assets/stories/desktop/mountains.jpg);
+    }
+    .two {
+      background-image: url(./assets/stories/desktop/cityscapes.jpg);
+    }
+    .three {
+      background-image: url(./assets/stories/desktop/18-days-voyage.jpg);
+    }
+    .four {
+      background-image: url(./assets/stories/desktop/architecturals.jpg);
+    }
   }
