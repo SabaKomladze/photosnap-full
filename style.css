@@ -276,6 +276,7 @@ header {
     align-items: center;
     flex-direction: column;
     margin-top: 56px;
+    position: relative;
   }
   .responsive h3 {
     font-size: 18px;
@@ -292,6 +293,10 @@ header {
     mix-blend-mode: normal;
     opacity: 0.6;
     margin-top: 16px;
+  }
+  .resposec{
+    position: relative;
+    top: 30px;
   }
   .advantages{
     padding: 0 32px
@@ -385,9 +390,34 @@ header {
     cursor: pointer;
   }
   @media (min-width:768px) {
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1;
+      gap: 2rem;
+      padding-right: 40px;
+      height: 72px;
+      position: absolute;
+      top: 0;
+    }
+    .nav p {
+      margin-bottom: 0;
+    }
+    .nav hr {
+      display: none;
+    }
+    .btn {
+      width: 158px;
+      position: absolute;
+      right: 40px;
+    }
+    #logo {
+      z-index: 2;
+    }
     .topper {
       display: flex;
-      height: 490px;
+      height: 650px;
     }
     #create-and-share-tab, #designed-for-everyone-tab {
       display: block;
@@ -402,6 +432,12 @@ header {
       justify-content: center;
       flex-direction: column;
       padding-left: 54px;
+    }
+    .pattern {
+      width: 6px;
+      height: 304px;
+      left: 0;
+      top: 173px;
     }
     #beautiful-stories-tab{
       display: block;
@@ -475,4 +511,68 @@ header {
     .four {
       background-image: url(./assets/stories/desktop/architecturals.jpg);
     }
+  }
+  @media (min-width:1440px) {
+    #create-and-share-tab, #designed-for-everyone-tab, #beautiful-stories-tab {
+      display: none;
+    }
+    #create-and-share-desk, #beautiful-stories-desk, #designed-for-everyone-desk{
+      display: block;
+      width: 57.63%;
+    }
+    #beautiful-stories-desk{
+      order: 1;
+    }
+    #create-and-share-desk, #designed-for-everyone-desk{
+      order: 2;
+    }
+    .gallery{
+      grid-template-columns: repeat(4, 1fr );
+    }
+    .advantages{
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+    .footer-nav {
+      position: absolute;
+      left: 430px;
+      flex-direction: column;
+      top: 35px;
+    }
+    footer {
+      align-items: stretch;
+    }
+    #footer-logo {
+      margin-top: 0;
+    }
+    .social {
+      margin-top: 85px;
+      padding-bottom: 0;
+    }
+    .copyright {
+      margin-top: 86px;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+    .upper,
+  .downer {
+    padding: 64px 170px;
+    position: relative;
+    margin-top: 0;
+  }
+    
+  .one {
+    background-image: url(./assets/stories/desktop/mountains.jpg);
+  }
+  .two {
+    background-image: url(./assets/stories/desktop/cityscapes.jpg);
+  }
+  .three {
+    background-image: url(./assets/stories/desktop/18-days-voyage.jpg);
+  }
+  .four {
+    background-image: url(./assets/stories/desktop/architecturals.jpg);
+  }
+    
   }
