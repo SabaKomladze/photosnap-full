@@ -139,7 +139,7 @@ header {
   padding-bottom: 72px;
 }
 /*T O G G L E */
-input[type="checkbox"] {
+#toggle{
   width: 64px;
   height: 32px;
   background: #dfdfdf;
@@ -158,7 +158,7 @@ input[type="checkbox"]::before {
   height: 24px;
   border-radius: 50%;
   top: 5px;
-  left: -5px;
+  left: 0px;
   transition: 0.5s;
   transform: scale(1.1);
   background: #000000;
@@ -672,6 +672,7 @@ footer {
   .features {
     margin-bottom: 112px;
   }
+  
 }
 @media (min-width: 1440px) {
   #photo-tab {

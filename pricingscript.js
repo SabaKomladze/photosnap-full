@@ -8,6 +8,8 @@ const monthlyPriceOne = price[0].innerHTML;
 const monthlyPriceTwo = price[1].innerHTML;
 const monthlyPriceThree = price[2].innerHTML;
 const monthtofyear = document.getElementsByClassName("monthtofyear");
+const monthly = document.getElementsByClassName('monthly')[0];
+const yearly = document.getElementsByClassName('yearly')[0];
 const monthtofyearsecond = document.getElementsByClassName(
   "monthtofyear-second"
 );
@@ -37,6 +39,8 @@ function makeYearly() {
     monthtofyear[0].innerHTML = "year";
     monthtofyear[1].innerHTML = "year";
     monthtofyearsecond[0].innerHTML = "year";
+    yearly.style.opacity = '1';
+    monthly.style.opacity = '0.5';
   } else {
     price[0].innerHTML = monthlyPriceOne;
     price[1].innerHTML = monthlyPriceTwo;
@@ -44,5 +48,7 @@ function makeYearly() {
     monthtofyear[0].innerHTML = "month";
     monthtofyear[1].innerHTML = "month";
     monthtofyearsecond[0].innerHTML = "month";
+    yearly.style.opacity = '0.5';
+    monthly.style.opacity = '1';
   }
 }
